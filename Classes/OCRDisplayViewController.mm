@@ -48,7 +48,7 @@
 {
     [super viewDidLoad];
     
-    [statusLabel setText:[NSString stringWithString:kViewTitle]];
+    [statusLabel setText:kViewTitle];
 
     activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     activityView.center = self.view.center;
@@ -77,7 +77,7 @@
     tess->Init([dataPath cStringUsingEncoding:NSUTF8StringEncoding],    // Path to tessdata-no ending /.
                "eng");                                                  // ISO 639-3 string or NULL.
     
-    NSString *output = [NSString stringWithString:@"Select an image to process."];
+    NSString *output = @"Select an image to process.";
     [outputView setText:output];
 
 }
@@ -87,7 +87,7 @@
 {
     [activityView stopAnimating];
     
-    [statusLabel setText:[NSString stringWithString:kViewTitle]];
+    [statusLabel setText:kViewTitle];
     [outputView setText:outputString]; 
     
     [thumbImageView shrinkToThumbnail];
@@ -230,8 +230,8 @@
         [picker setDelegate:self];
         
         // allowing editing is nice, but only returns a small 320px image
-        [picker setAllowsImageEditing:YES]; 
-        [self presentModalViewController:picker animated:YES];
+        [picker setAllowsEditing:YES]; 
+        [self presentViewController:picker animated:YES completion:nil];
         [picker release];
     }
 }
@@ -239,12 +239,12 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     NSLog(@"Picker has returned");
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     // process the selected image:
     [activityView startAnimating];
     
-    [statusLabel setText:[NSString stringWithString:@"Processing image..."]];
+    [statusLabel setText:@"Processing image..."];
     [outputView setText:@""];
         
     // send the edited image to the thumbnail view:
@@ -315,12 +315,12 @@
 		case MFMailComposeResultSent:
 			break;
 		case MFMailComposeResultFailed:
-            message = [NSString stringWithString:@"Mail Failed."];
+            message = @"Mail Failed.";
 			break;
 		default:
 			break;
 	}
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
     
     if(message != nil) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Status"
@@ -352,7 +352,7 @@
 	// Fill out the email body text
     [picker setMessageBody:outputString isHTML:NO];
 
-	[self presentModalViewController:picker animated:YES];
+	[self presentViewController:picker animated:YES completion:nil];
     [picker release];
     
 }
