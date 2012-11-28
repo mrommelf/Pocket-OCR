@@ -14,19 +14,21 @@
 		241B1E6710517E3800926F2B /* OCRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 241B1E6610517E3800926F2B /* OCRAppDelegate.m */; };
 		2463448F10CC281000011876 /* ZoomableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2463448E10CC281000011876 /* ZoomableImage.m */; };
 		2482F02B10FC300900EFB5A2 /* OCRDisplayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2482F02A10FC300900EFB5A2 /* OCRDisplayViewController.mm */; };
-		248395841254394A003C7FC8 /* tessdata-svn in Resources */ = {isa = PBXBuildFile; fileRef = 248395791254394A003C7FC8 /* tessdata-svn */; };
+		248395841254394A003C7FC8 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 248395791254394A003C7FC8 /* tessdata */; };
 		24B2BCC910C8912E00A13CE0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B2BCC810C8912E00A13CE0 /* MessageUI.framework */; };
 		24BA10F010C882E600016CED /* TessIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BA10EF10C882E600016CED /* TessIcon.png */; };
-		24BA110F10C884F300016CED /* OCRDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24BA110D10C884F300016CED /* OCRDisplayViewController.xib */; };
 		24BC002410FC486A0043EB8F /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24BC002310FC486A0043EB8F /* readme.txt */; };
 		24F2866410C9BA88004BB5CA /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F2865F10C9BA87004BB5CA /* UIImage+Alpha.m */; };
 		24F2866510C9BA88004BB5CA /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F2866110C9BA88004BB5CA /* UIImage+Resize.m */; };
 		24F2866610C9BA88004BB5CA /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F2866310C9BA88004BB5CA /* UIImage+RoundedCorner.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		32D2976A1660A15100D86E2E /* libtesseract_all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D297681660A15100D86E2E /* libtesseract_all.a */; };
-		32D2976B1660A15100D86E2E /* libtesseract.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D297691660A15100D86E2E /* libtesseract.a */; };
 		32D2976D1661176600D86E2E /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D2976C1661176600D86E2E /* liblept.a */; };
+		32D2976F16616AE100D86E2E /* OCR_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2976E16616AE100D86E2E /* OCR_iPhone.storyboard */; };
+		32D2977116616B0A00D86E2E /* OCR_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2977016616B0A00D86E2E /* OCR_iPad.storyboard */; };
+		32D2977316617F0A00D86E2E /* icono57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D2977216617F0A00D86E2E /* icono57x57.png */; };
+		32D2977516617F1200D86E2E /* icono114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D2977416617F1200D86E2E /* icono114x114.png */; };
+		32D2977716617F2C00D86E2E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D2977616617F2C00D86E2E /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +42,9 @@
 		2463448E10CC281000011876 /* ZoomableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableImage.m; sourceTree = "<group>"; };
 		2482F02910FC300900EFB5A2 /* OCRDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCRDisplayViewController.h; sourceTree = "<group>"; };
 		2482F02A10FC300900EFB5A2 /* OCRDisplayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCRDisplayViewController.mm; sourceTree = "<group>"; };
-		248395791254394A003C7FC8 /* tessdata-svn */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "tessdata-svn"; sourceTree = "<group>"; };
+		248395791254394A003C7FC8 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		24B2BCC810C8912E00A13CE0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		24BA10EF10C882E600016CED /* TessIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TessIcon.png; path = dev/TessIcon.png; sourceTree = "<group>"; };
-		24BA110D10C884F300016CED /* OCRDisplayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OCRDisplayViewController.xib; sourceTree = "<group>"; };
 		24BC002310FC486A0043EB8F /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		24F2865E10C9BA87004BB5CA /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		24F2865F10C9BA87004BB5CA /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
@@ -52,12 +53,15 @@
 		24F2866210C9BA88004BB5CA /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		24F2866310C9BA88004BB5CA /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* OCR_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCR_Prefix.pch; sourceTree = "<group>"; };
 		32D297681660A15100D86E2E /* libtesseract_all.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtesseract_all.a; sourceTree = "<group>"; };
-		32D297691660A15100D86E2E /* libtesseract.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtesseract.a; sourceTree = "<group>"; };
 		32D2976C1661176600D86E2E /* liblept.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblept.a; sourceTree = "<group>"; };
+		32D2976E16616AE100D86E2E /* OCR_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OCR_iPhone.storyboard; sourceTree = "<group>"; };
+		32D2977016616B0A00D86E2E /* OCR_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OCR_iPad.storyboard; sourceTree = "<group>"; };
+		32D2977216617F0A00D86E2E /* icono57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono57x57.png; sourceTree = "<group>"; };
+		32D2977416617F1200D86E2E /* icono114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono114x114.png; sourceTree = "<group>"; };
+		32D2977616617F2C00D86E2E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* OCR-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OCR-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D2976A1660A15100D86E2E /* libtesseract_all.a in Frameworks */,
-				32D2976B1660A15100D86E2E /* libtesseract.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				24B2BCC910C8912E00A13CE0 /* MessageUI.framework in Frameworks */,
@@ -84,8 +87,8 @@
 			children = (
 				2482F02910FC300900EFB5A2 /* OCRDisplayViewController.h */,
 				2482F02A10FC300900EFB5A2 /* OCRDisplayViewController.mm */,
-				241B1E6610517E3800926F2B /* OCRAppDelegate.m */,
 				1D3623240D0F684500981E51 /* OCRAppDelegate.h */,
+				241B1E6610517E3800926F2B /* OCRAppDelegate.m */,
 				2463448D10CC281000011876 /* ZoomableImage.h */,
 				2463448E10CC281000011876 /* ZoomableImage.m */,
 			);
@@ -138,11 +141,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				248395791254394A003C7FC8 /* tessdata-svn */,
+				248395791254394A003C7FC8 /* tessdata */,
 				240C703410C8F5A800CD7AD1 /* shadow.png */,
-				24BA110D10C884F300016CED /* OCRDisplayViewController.xib */,
+				32D2977616617F2C00D86E2E /* Default-568h@2x.png */,
+				32D2977216617F0A00D86E2E /* icono57x57.png */,
+				32D2977416617F1200D86E2E /* icono114x114.png */,
+				32D2977016616B0A00D86E2E /* OCR_iPad.storyboard */,
+				32D2976E16616AE100D86E2E /* OCR_iPhone.storyboard */,
 				24BA10EF10C882E600016CED /* TessIcon.png */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* OCR-Info.plist */,
 				24BC002310FC486A0043EB8F /* readme.txt */,
 			);
@@ -152,13 +158,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32D2976C1661176600D86E2E /* liblept.a */,
-				32D297681660A15100D86E2E /* libtesseract_all.a */,
-				32D297691660A15100D86E2E /* libtesseract.a */,
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				24B2BCC810C8912E00A13CE0 /* MessageUI.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				32D297681660A15100D86E2E /* libtesseract_all.a */,
+				32D2976C1661176600D86E2E /* liblept.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,12 +220,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				24BA10F010C882E600016CED /* TessIcon.png in Resources */,
-				24BA110F10C884F300016CED /* OCRDisplayViewController.xib in Resources */,
 				240C703510C8F5A800CD7AD1 /* shadow.png in Resources */,
 				24BC002410FC486A0043EB8F /* readme.txt in Resources */,
-				248395841254394A003C7FC8 /* tessdata-svn in Resources */,
+				248395841254394A003C7FC8 /* tessdata in Resources */,
+				32D2976F16616AE100D86E2E /* OCR_iPhone.storyboard in Resources */,
+				32D2977116616B0A00D86E2E /* OCR_iPad.storyboard in Resources */,
+				32D2977316617F0A00D86E2E /* icono57x57.png in Resources */,
+				32D2977516617F1200D86E2E /* icono114x114.png in Resources */,
+				32D2977716617F2C00D86E2E /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +272,7 @@
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = OCR;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../tesseract/tesseract_ocr\"/** /Users/mrommelf/Source/tesseract/dependencies/include/tesseract/**";
 			};
 			name = Debug;
@@ -283,6 +292,7 @@
 				);
 				PRODUCT_NAME = OCR;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../tesseract/tesseract_ocr\"/** /Users/mrommelf/Source/tesseract/dependencies/include/tesseract/**";
 			};
 			name = Release;

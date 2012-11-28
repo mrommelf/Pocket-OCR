@@ -24,7 +24,7 @@
 
 @implementation OCRAppDelegate
 
-@synthesize window;
+@synthesize window = _window;
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application 
@@ -44,6 +44,5 @@
     
     [super dealloc];
 }
-
 
 @end

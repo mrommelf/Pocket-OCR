@@ -21,7 +21,6 @@
 
 #import "OCRDisplayViewController.h"
 #import "baseapi.h"
-
 #import "UIImage+Resize.h"
 #import <math.h>
 
@@ -63,7 +62,7 @@
     if (![fileManager fileExistsAtPath:dataPath]) {
         // get the path to the app bundle (with the tessdata dir)
         NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
-        NSString *tessdataPath = [bundlePath stringByAppendingPathComponent:@"tessdata-svn"];
+        NSString *tessdataPath = [bundlePath stringByAppendingPathComponent:@"tessdata"];
         if (tessdataPath) {
             [fileManager copyItemAtPath:tessdataPath toPath:dataPath error:NULL];
         }
@@ -74,11 +73,12 @@
     
     // init the tesseract engine.
     tess = new TessBaseAPI();
-    tess->Init([dataPath cStringUsingEncoding:NSUTF8StringEncoding],    // Path to tessdata-no ending /.
-               "eng");                                                  // ISO 639-3 string or NULL.
+    tess->Init([dataPathWithSlash cStringUsingEncoding:NSUTF8StringEncoding], "eng");
     
-    NSString *output = @"Select an image to process.";
-    [outputView setText:output];
+    //tesseract::PageSegMode pagesegmode = tesseract::PSM_AUTO;
+    tess->SetPageSegMode(tesseract::PSM_AUTO);
+
+    [outputView setText:@"Select an image to process."];
 
 }
 
@@ -104,11 +104,9 @@
     const UInt8 *imageData = CFDataGetBytePtr(data);
     
     // this could take a while. maybe needs to happen asynchronously?
-    char* text = tess->TesseractRect(imageData,
-                                     bytes_per_pixel,
-                                     bytes_per_line,
-                                     0, 0,
-                                     imageSize.width, imageSize.height);
+    char* text = tess->TesseractRect(imageData, bytes_per_pixel, bytes_per_line,
+                                     0, 0, imageSize.width, imageSize.height);
+   
     NSString *textStr = [NSString stringWithUTF8String:text];
     delete[] text;
     CFRelease(data);
@@ -277,21 +275,6 @@
     // crop, but maintain original size:
     croppedImage = [croppedImage croppedImage:rect];
     NSLog(@"cropped image size: %@", [[NSValue valueWithCGSize:croppedImage.size] description]);
-
-    // for testing.
-    //[self.view addSubview:[[UIImageView alloc] initWithImage:image]];
-
-    // resize, so as to not choke tesseract:
-    // scaling up a low resolution image (eg. screenshots) seems to help the recognition.
-    // 1200 pixels is an arbitrary value, but seems to work well.
-    CGFloat newWidth = 1200; //(1000 < croppedImage.size.width) ? 1000 : croppedImage.size.width;
-    CGSize newSize = CGSizeMake(newWidth,newWidth);
-
-    croppedImage = [croppedImage resizedImage:newSize interpolationQuality:kCGInterpolationHigh];
-    NSLog(@"resized image size: %@", [[NSValue valueWithCGSize:croppedImage.size] description]);
-
-    //for debugging:
-//    [thumbImageView setImage:croppedImage];
 
     // process image, threaded:
     [self performSelector:@selector(threadedReadAndProcessImage:) withObject:croppedImage afterDelay:0.10];
