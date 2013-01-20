@@ -22,6 +22,40 @@
 		24F2866510C9BA88004BB5CA /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F2866110C9BA88004BB5CA /* UIImage+Resize.m */; };
 		24F2866610C9BA88004BB5CA /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F2866310C9BA88004BB5CA /* UIImage+RoundedCorner.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		3236BE32167180B1003892EA /* DropBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE31167180B1003892EA /* DropBoxViewController.m */; };
+		3236BE7F1673989C003892EA /* GCOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE361673989C003892EA /* GCOAuth.m */; };
+		3236BE801673989C003892EA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3236BE371673989C003892EA /* LICENSE */; };
+		3236BE811673989C003892EA /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE391673989C003892EA /* NSData+Base64.m */; };
+		3236BE821673989C003892EA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3236BE3B1673989C003892EA /* LICENSE */; };
+		3236BE831673989C003892EA /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE3D1673989C003892EA /* NSString+URLEncoding.m */; };
+		3236BE841673989C003892EA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3236BE3F1673989C003892EA /* LICENSE */; };
+		3236BE851673989C003892EA /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE411673989C003892EA /* SSKeychain.m */; };
+		3236BE861673989C003892EA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3236BE431673989C003892EA /* LICENSE */; };
+		3236BE871673989C003892EA /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE461673989C003892EA /* TBinaryProtocol.m */; };
+		3236BE881673989C003892EA /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE491673989C003892EA /* TProtocolException.m */; };
+		3236BE891673989C003892EA /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE4C1673989C003892EA /* TProtocolUtil.m */; };
+		3236BE8A1673989C003892EA /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE4E1673989C003892EA /* TApplicationException.m */; };
+		3236BE8B1673989C003892EA /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE501673989C003892EA /* TException.m */; };
+		3236BE8C1673989C003892EA /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE561673989C003892EA /* THTTPClient.m */; };
+		3236BE8D1673989C003892EA /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE581673989C003892EA /* TMemoryBuffer.m */; };
+		3236BE8E1673989C003892EA /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE5B1673989C003892EA /* TTransportException.m */; };
+		3236BE8F1673989C003892EA /* EDAMErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE5F1673989C003892EA /* EDAMErrors.m */; };
+		3236BE901673989C003892EA /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE611673989C003892EA /* EDAMLimits.m */; };
+		3236BE911673989C003892EA /* EDAMNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE631673989C003892EA /* EDAMNoteStore.m */; };
+		3236BE921673989C003892EA /* EDAMTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE651673989C003892EA /* EDAMTypes.m */; };
+		3236BE931673989C003892EA /* EDAMUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE671673989C003892EA /* EDAMUserStore.m */; };
+		3236BE941673989C003892EA /* EvernoteNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE6A1673989C003892EA /* EvernoteNoteStore.m */; };
+		3236BE951673989C003892EA /* EvernoteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE6C1673989C003892EA /* EvernoteSDK.m */; };
+		3236BE961673989C003892EA /* EvernoteSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE6E1673989C003892EA /* EvernoteSession.m */; };
+		3236BE971673989C003892EA /* EvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE701673989C003892EA /* EvernoteUserStore.m */; };
+		3236BE981673989C003892EA /* ENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE731673989C003892EA /* ENAPI.m */; };
+		3236BE991673989C003892EA /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE751673989C003892EA /* ENConstants.m */; };
+		3236BE9A1673989C003892EA /* ENCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE771673989C003892EA /* ENCredentials.m */; };
+		3236BE9B1673989C003892EA /* ENCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE791673989C003892EA /* ENCredentialStore.m */; };
+		3236BE9C1673989C003892EA /* ENOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236BE7B1673989C003892EA /* ENOAuthViewController.m */; };
+		3236BE9D1673989C003892EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3236BE7D1673989C003892EA /* Localizable.strings */; };
+		3236BEE416739DE9003892EA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3236BEE216739C4D003892EA /* Security.framework */; };
+		32C17AF6166AC0B90002CDDB /* EvernoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C17AF5166AC0B90002CDDB /* EvernoteViewController.m */; };
 		32D2976A1660A15100D86E2E /* libtesseract_all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D297681660A15100D86E2E /* libtesseract_all.a */; };
 		32D2976D1661176600D86E2E /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D2976C1661176600D86E2E /* liblept.a */; };
 		32D2976F16616AE100D86E2E /* OCR_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D2976E16616AE100D86E2E /* OCR_iPhone.storyboard */; };
@@ -54,6 +88,84 @@
 		24F2866310C9BA88004BB5CA /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3236BE30167180B1003892EA /* DropBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxViewController.h; sourceTree = "<group>"; };
+		3236BE31167180B1003892EA /* DropBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxViewController.m; sourceTree = "<group>"; };
+		3236BE351673989C003892EA /* GCOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCOAuth.h; sourceTree = "<group>"; };
+		3236BE361673989C003892EA /* GCOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCOAuth.m; sourceTree = "<group>"; };
+		3236BE371673989C003892EA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3236BE381673989C003892EA /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		3236BE391673989C003892EA /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		3236BE3B1673989C003892EA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3236BE3C1673989C003892EA /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		3236BE3D1673989C003892EA /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		3236BE3F1673989C003892EA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3236BE401673989C003892EA /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		3236BE411673989C003892EA /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		3236BE431673989C003892EA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3236BE451673989C003892EA /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		3236BE461673989C003892EA /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		3236BE471673989C003892EA /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		3236BE481673989C003892EA /* TProtocolException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolException.h; sourceTree = "<group>"; };
+		3236BE491673989C003892EA /* TProtocolException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolException.m; sourceTree = "<group>"; };
+		3236BE4A1673989C003892EA /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		3236BE4B1673989C003892EA /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		3236BE4C1673989C003892EA /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		3236BE4D1673989C003892EA /* TApplicationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationException.h; sourceTree = "<group>"; };
+		3236BE4E1673989C003892EA /* TApplicationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationException.m; sourceTree = "<group>"; };
+		3236BE4F1673989C003892EA /* TException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TException.h; sourceTree = "<group>"; };
+		3236BE501673989C003892EA /* TException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TException.m; sourceTree = "<group>"; };
+		3236BE511673989C003892EA /* Thrift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thrift.h; sourceTree = "<group>"; };
+		3236BE521673989C003892EA /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		3236BE531673989C003892EA /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		3236BE551673989C003892EA /* THTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPClient.h; sourceTree = "<group>"; };
+		3236BE561673989C003892EA /* THTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPClient.m; sourceTree = "<group>"; };
+		3236BE571673989C003892EA /* TMemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMemoryBuffer.h; sourceTree = "<group>"; };
+		3236BE581673989C003892EA /* TMemoryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMemoryBuffer.m; sourceTree = "<group>"; };
+		3236BE591673989C003892EA /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		3236BE5A1673989C003892EA /* TTransportException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportException.h; sourceTree = "<group>"; };
+		3236BE5B1673989C003892EA /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
+		3236BE5D1673989C003892EA /* EDAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAM.h; sourceTree = "<group>"; };
+		3236BE5E1673989C003892EA /* EDAMErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMErrors.h; sourceTree = "<group>"; };
+		3236BE5F1673989C003892EA /* EDAMErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMErrors.m; sourceTree = "<group>"; };
+		3236BE601673989C003892EA /* EDAMLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLimits.h; sourceTree = "<group>"; };
+		3236BE611673989C003892EA /* EDAMLimits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLimits.m; sourceTree = "<group>"; };
+		3236BE621673989C003892EA /* EDAMNoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteStore.h; sourceTree = "<group>"; };
+		3236BE631673989C003892EA /* EDAMNoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteStore.m; sourceTree = "<group>"; };
+		3236BE641673989C003892EA /* EDAMTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMTypes.h; sourceTree = "<group>"; };
+		3236BE651673989C003892EA /* EDAMTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMTypes.m; sourceTree = "<group>"; };
+		3236BE661673989C003892EA /* EDAMUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserStore.h; sourceTree = "<group>"; };
+		3236BE671673989C003892EA /* EDAMUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserStore.m; sourceTree = "<group>"; };
+		3236BE681673989C003892EA /* evernote-sdk-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "evernote-sdk-ios-Prefix.pch"; path = "evernote-sdk-ios/evernote-sdk-ios/evernote-sdk-ios-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		3236BE691673989C003892EA /* EvernoteNoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvernoteNoteStore.h; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteNoteStore.h"; sourceTree = SOURCE_ROOT; };
+		3236BE6A1673989C003892EA /* EvernoteNoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvernoteNoteStore.m; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteNoteStore.m"; sourceTree = SOURCE_ROOT; };
+		3236BE6B1673989C003892EA /* EvernoteSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvernoteSDK.h; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteSDK.h"; sourceTree = SOURCE_ROOT; };
+		3236BE6C1673989C003892EA /* EvernoteSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvernoteSDK.m; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteSDK.m"; sourceTree = SOURCE_ROOT; };
+		3236BE6D1673989C003892EA /* EvernoteSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvernoteSession.h; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteSession.h"; sourceTree = SOURCE_ROOT; };
+		3236BE6E1673989C003892EA /* EvernoteSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvernoteSession.m; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteSession.m"; sourceTree = SOURCE_ROOT; };
+		3236BE6F1673989C003892EA /* EvernoteUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvernoteUserStore.h; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteUserStore.h"; sourceTree = SOURCE_ROOT; };
+		3236BE701673989C003892EA /* EvernoteUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvernoteUserStore.m; path = "evernote-sdk-ios/evernote-sdk-ios/EvernoteUserStore.m"; sourceTree = SOURCE_ROOT; };
+		3236BE721673989C003892EA /* ENAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENAPI.h; sourceTree = "<group>"; };
+		3236BE731673989C003892EA /* ENAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENAPI.m; sourceTree = "<group>"; };
+		3236BE741673989C003892EA /* ENConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENConstants.h; sourceTree = "<group>"; };
+		3236BE751673989C003892EA /* ENConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENConstants.m; sourceTree = "<group>"; };
+		3236BE761673989C003892EA /* ENCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCredentials.h; sourceTree = "<group>"; };
+		3236BE771673989C003892EA /* ENCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCredentials.m; sourceTree = "<group>"; };
+		3236BE781673989C003892EA /* ENCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCredentialStore.h; sourceTree = "<group>"; };
+		3236BE791673989C003892EA /* ENCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCredentialStore.m; sourceTree = "<group>"; };
+		3236BE7A1673989C003892EA /* ENOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENOAuthViewController.h; sourceTree = "<group>"; };
+		3236BE7B1673989C003892EA /* ENOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENOAuthViewController.m; sourceTree = "<group>"; };
+		3236BE7E1673989C003892EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3236BEA716739BC4003892EA /* evernote-sdk-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "evernote-sdk-ios-Prefix.pch"; sourceTree = "<group>"; };
+		3236BEA816739BC4003892EA /* evernote_sdk_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = evernote_sdk_ios.h; sourceTree = "<group>"; };
+		3236BEAA16739BC4003892EA /* evernote_sdk_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = evernote_sdk_ios.m; sourceTree = "<group>"; };
+		3236BEB216739BC4003892EA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3236BEBB16739BC4003892EA /* evernote-sdk-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "evernote-sdk-iosTests-Info.plist"; sourceTree = "<group>"; };
+		3236BEBD16739BC4003892EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3236BEBF16739BC4003892EA /* evernote_sdk_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = evernote_sdk_iosTests.h; sourceTree = "<group>"; };
+		3236BEC016739BC4003892EA /* evernote_sdk_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = evernote_sdk_iosTests.m; sourceTree = "<group>"; };
+		3236BEE216739C4D003892EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		32C17AF4166AC0B90002CDDB /* EvernoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteViewController.h; sourceTree = "<group>"; };
+		32C17AF5166AC0B90002CDDB /* EvernoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteViewController.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* OCR_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCR_Prefix.pch; sourceTree = "<group>"; };
 		32D297681660A15100D86E2E /* libtesseract_all.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtesseract_all.a; sourceTree = "<group>"; };
 		32D2976C1661176600D86E2E /* liblept.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblept.a; sourceTree = "<group>"; };
@@ -71,11 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D2976A1660A15100D86E2E /* libtesseract_all.a in Frameworks */,
+				32D2976D1661176600D86E2E /* liblept.a in Frameworks */,
+				3236BEE416739DE9003892EA /* Security.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				24B2BCC910C8912E00A13CE0 /* MessageUI.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				32D2976D1661176600D86E2E /* liblept.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +198,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				32C17AF4166AC0B90002CDDB /* EvernoteViewController.h */,
+				32C17AF5166AC0B90002CDDB /* EvernoteViewController.m */,
+				3236BE30167180B1003892EA /* DropBoxViewController.h */,
+				3236BE31167180B1003892EA /* DropBoxViewController.m */,
 				2482F02910FC300900EFB5A2 /* OCRDisplayViewController.h */,
 				2482F02A10FC300900EFB5A2 /* OCRDisplayViewController.mm */,
 				1D3623240D0F684500981E51 /* OCRAppDelegate.h */,
@@ -119,10 +236,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				3236BEE216739C4D003892EA /* Security.framework */,
+				3236BE9E167398BF003892EA /* evernote-sdk-ios */,
 				24F2865D10C9BA87004BB5CA /* UIImage-categories */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				3236BEA516739BC4003892EA /* evernote-sdk-ios */,
+				3236BEB916739BC4003892EA /* evernote-sdk-iosTests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -164,8 +285,202 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				32D297681660A15100D86E2E /* libtesseract_all.a */,
 				32D2976C1661176600D86E2E /* liblept.a */,
+				3236BEB216739BC4003892EA /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3236BE331673989C003892EA /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE341673989C003892EA /* cocoa-oauth */,
+				3236BE3A1673989C003892EA /* NSString+URLEncoding */,
+				3236BE3E1673989C003892EA /* SSKeychain */,
+				3236BE421673989C003892EA /* Thrift */,
+			);
+			name = 3rdParty;
+			path = "evernote-sdk-ios/evernote-sdk-ios/3rdParty";
+			sourceTree = SOURCE_ROOT;
+		};
+		3236BE341673989C003892EA /* cocoa-oauth */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE351673989C003892EA /* GCOAuth.h */,
+				3236BE361673989C003892EA /* GCOAuth.m */,
+				3236BE371673989C003892EA /* LICENSE */,
+				3236BE381673989C003892EA /* NSData+Base64.h */,
+				3236BE391673989C003892EA /* NSData+Base64.m */,
+			);
+			path = "cocoa-oauth";
+			sourceTree = "<group>";
+		};
+		3236BE3A1673989C003892EA /* NSString+URLEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE3B1673989C003892EA /* LICENSE */,
+				3236BE3C1673989C003892EA /* NSString+URLEncoding.h */,
+				3236BE3D1673989C003892EA /* NSString+URLEncoding.m */,
+			);
+			path = "NSString+URLEncoding";
+			sourceTree = "<group>";
+		};
+		3236BE3E1673989C003892EA /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE3F1673989C003892EA /* LICENSE */,
+				3236BE401673989C003892EA /* SSKeychain.h */,
+				3236BE411673989C003892EA /* SSKeychain.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		3236BE421673989C003892EA /* Thrift */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE431673989C003892EA /* LICENSE */,
+				3236BE441673989C003892EA /* protocol */,
+				3236BE4D1673989C003892EA /* TApplicationException.h */,
+				3236BE4E1673989C003892EA /* TApplicationException.m */,
+				3236BE4F1673989C003892EA /* TException.h */,
+				3236BE501673989C003892EA /* TException.m */,
+				3236BE511673989C003892EA /* Thrift.h */,
+				3236BE521673989C003892EA /* TProcessor.h */,
+				3236BE531673989C003892EA /* TProcessorFactory.h */,
+				3236BE541673989C003892EA /* transport */,
+			);
+			path = Thrift;
+			sourceTree = "<group>";
+		};
+		3236BE441673989C003892EA /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE451673989C003892EA /* TBinaryProtocol.h */,
+				3236BE461673989C003892EA /* TBinaryProtocol.m */,
+				3236BE471673989C003892EA /* TProtocol.h */,
+				3236BE481673989C003892EA /* TProtocolException.h */,
+				3236BE491673989C003892EA /* TProtocolException.m */,
+				3236BE4A1673989C003892EA /* TProtocolFactory.h */,
+				3236BE4B1673989C003892EA /* TProtocolUtil.h */,
+				3236BE4C1673989C003892EA /* TProtocolUtil.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		3236BE541673989C003892EA /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE551673989C003892EA /* THTTPClient.h */,
+				3236BE561673989C003892EA /* THTTPClient.m */,
+				3236BE571673989C003892EA /* TMemoryBuffer.h */,
+				3236BE581673989C003892EA /* TMemoryBuffer.m */,
+				3236BE591673989C003892EA /* TTransport.h */,
+				3236BE5A1673989C003892EA /* TTransportException.h */,
+				3236BE5B1673989C003892EA /* TTransportException.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		3236BE5C1673989C003892EA /* EDAM */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE5D1673989C003892EA /* EDAM.h */,
+				3236BE5E1673989C003892EA /* EDAMErrors.h */,
+				3236BE5F1673989C003892EA /* EDAMErrors.m */,
+				3236BE601673989C003892EA /* EDAMLimits.h */,
+				3236BE611673989C003892EA /* EDAMLimits.m */,
+				3236BE621673989C003892EA /* EDAMNoteStore.h */,
+				3236BE631673989C003892EA /* EDAMNoteStore.m */,
+				3236BE641673989C003892EA /* EDAMTypes.h */,
+				3236BE651673989C003892EA /* EDAMTypes.m */,
+				3236BE661673989C003892EA /* EDAMUserStore.h */,
+				3236BE671673989C003892EA /* EDAMUserStore.m */,
+			);
+			name = EDAM;
+			path = "evernote-sdk-ios/evernote-sdk-ios/EDAM";
+			sourceTree = SOURCE_ROOT;
+		};
+		3236BE711673989C003892EA /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE721673989C003892EA /* ENAPI.h */,
+				3236BE731673989C003892EA /* ENAPI.m */,
+				3236BE741673989C003892EA /* ENConstants.h */,
+				3236BE751673989C003892EA /* ENConstants.m */,
+				3236BE761673989C003892EA /* ENCredentials.h */,
+				3236BE771673989C003892EA /* ENCredentials.m */,
+				3236BE781673989C003892EA /* ENCredentialStore.h */,
+				3236BE791673989C003892EA /* ENCredentialStore.m */,
+				3236BE7A1673989C003892EA /* ENOAuthViewController.h */,
+				3236BE7B1673989C003892EA /* ENOAuthViewController.m */,
+				3236BE7C1673989C003892EA /* Resources */,
+			);
+			name = internal;
+			path = "evernote-sdk-ios/evernote-sdk-ios/internal";
+			sourceTree = SOURCE_ROOT;
+		};
+		3236BE7C1673989C003892EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE7D1673989C003892EA /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3236BE9E167398BF003892EA /* evernote-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				3236BE681673989C003892EA /* evernote-sdk-ios-Prefix.pch */,
+				3236BE691673989C003892EA /* EvernoteNoteStore.h */,
+				3236BE6A1673989C003892EA /* EvernoteNoteStore.m */,
+				3236BE6B1673989C003892EA /* EvernoteSDK.h */,
+				3236BE6C1673989C003892EA /* EvernoteSDK.m */,
+				3236BE6D1673989C003892EA /* EvernoteSession.h */,
+				3236BE6E1673989C003892EA /* EvernoteSession.m */,
+				3236BE6F1673989C003892EA /* EvernoteUserStore.h */,
+				3236BE701673989C003892EA /* EvernoteUserStore.m */,
+				3236BE711673989C003892EA /* internal */,
+				3236BE5C1673989C003892EA /* EDAM */,
+				3236BE331673989C003892EA /* 3rdParty */,
+			);
+			name = "evernote-sdk-ios";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3236BEA516739BC4003892EA /* evernote-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				3236BEA816739BC4003892EA /* evernote_sdk_ios.h */,
+				3236BEAA16739BC4003892EA /* evernote_sdk_ios.m */,
+				3236BEA616739BC4003892EA /* Supporting Files */,
+			);
+			path = "evernote-sdk-ios";
+			sourceTree = "<group>";
+		};
+		3236BEA616739BC4003892EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3236BEA716739BC4003892EA /* evernote-sdk-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3236BEB916739BC4003892EA /* evernote-sdk-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				3236BEBF16739BC4003892EA /* evernote_sdk_iosTests.h */,
+				3236BEC016739BC4003892EA /* evernote_sdk_iosTests.m */,
+				3236BEBA16739BC4003892EA /* Supporting Files */,
+			);
+			path = "evernote-sdk-iosTests";
+			sourceTree = "<group>";
+		};
+		3236BEBA16739BC4003892EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3236BEBB16739BC4003892EA /* evernote-sdk-iosTests-Info.plist */,
+				3236BEBC16739BC4003892EA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +520,7 @@
 				Japanese,
 				French,
 				German,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -229,6 +545,11 @@
 				32D2977316617F0A00D86E2E /* icono57x57.png in Resources */,
 				32D2977516617F1200D86E2E /* icono114x114.png in Resources */,
 				32D2977716617F2C00D86E2E /* Default-568h@2x.png in Resources */,
+				3236BE801673989C003892EA /* LICENSE in Resources */,
+				3236BE821673989C003892EA /* LICENSE in Resources */,
+				3236BE841673989C003892EA /* LICENSE in Resources */,
+				3236BE861673989C003892EA /* LICENSE in Resources */,
+				3236BE9D1673989C003892EA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +567,57 @@
 				24F2866610C9BA88004BB5CA /* UIImage+RoundedCorner.m in Sources */,
 				2463448F10CC281000011876 /* ZoomableImage.m in Sources */,
 				2482F02B10FC300900EFB5A2 /* OCRDisplayViewController.mm in Sources */,
+				32C17AF6166AC0B90002CDDB /* EvernoteViewController.m in Sources */,
+				3236BE32167180B1003892EA /* DropBoxViewController.m in Sources */,
+				3236BE7F1673989C003892EA /* GCOAuth.m in Sources */,
+				3236BE811673989C003892EA /* NSData+Base64.m in Sources */,
+				3236BE831673989C003892EA /* NSString+URLEncoding.m in Sources */,
+				3236BE851673989C003892EA /* SSKeychain.m in Sources */,
+				3236BE871673989C003892EA /* TBinaryProtocol.m in Sources */,
+				3236BE881673989C003892EA /* TProtocolException.m in Sources */,
+				3236BE891673989C003892EA /* TProtocolUtil.m in Sources */,
+				3236BE8A1673989C003892EA /* TApplicationException.m in Sources */,
+				3236BE8B1673989C003892EA /* TException.m in Sources */,
+				3236BE8C1673989C003892EA /* THTTPClient.m in Sources */,
+				3236BE8D1673989C003892EA /* TMemoryBuffer.m in Sources */,
+				3236BE8E1673989C003892EA /* TTransportException.m in Sources */,
+				3236BE8F1673989C003892EA /* EDAMErrors.m in Sources */,
+				3236BE901673989C003892EA /* EDAMLimits.m in Sources */,
+				3236BE911673989C003892EA /* EDAMNoteStore.m in Sources */,
+				3236BE921673989C003892EA /* EDAMTypes.m in Sources */,
+				3236BE931673989C003892EA /* EDAMUserStore.m in Sources */,
+				3236BE941673989C003892EA /* EvernoteNoteStore.m in Sources */,
+				3236BE951673989C003892EA /* EvernoteSDK.m in Sources */,
+				3236BE961673989C003892EA /* EvernoteSession.m in Sources */,
+				3236BE971673989C003892EA /* EvernoteUserStore.m in Sources */,
+				3236BE981673989C003892EA /* ENAPI.m in Sources */,
+				3236BE991673989C003892EA /* ENConstants.m in Sources */,
+				3236BE9A1673989C003892EA /* ENCredentials.m in Sources */,
+				3236BE9B1673989C003892EA /* ENCredentialStore.m in Sources */,
+				3236BE9C1673989C003892EA /* ENOAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3236BE7D1673989C003892EA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3236BE7E1673989C003892EA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3236BEBC16739BC4003892EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3236BEBD16739BC4003892EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

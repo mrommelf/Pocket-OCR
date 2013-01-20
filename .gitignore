@@ -16,3 +16,6 @@ profile
 # ignore other object files
 *.o
 *.a
+
+evernote-sdk-ios/*
+evernote-sdk-ios

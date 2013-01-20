@@ -22,8 +22,14 @@
 #import "OCRDisplayViewController.h"
 #import "baseapi.h"
 #import "UIImage+Resize.h"
+#import "EvernoteViewController.h"
+#import "DropBoxViewController.h"
 #import <math.h>
 
+typedef enum {
+    kImport,
+    kExport
+} buttonType;
 #define kViewTitle @"Pocket Tesseract OCR"
 
 @implementation OCRDisplayViewController
@@ -174,13 +180,9 @@
 
 #pragma mark Image Selection methods
 - (IBAction) selectImage: (id) sender
-{
-	//NSLog(@"Button pressed: %d",[sender tag]);
-    
+{    
     // present an alert sheet if a camera is visible and allow the user to select the camera or photo library.
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
-//    if(1)  // for testing the alert sheet only
-    {
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         // this device has a camera, display the alert sheet:
         UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                       initWithTitle:@"Select Image Source"
@@ -189,6 +191,7 @@
                                       destructiveButtonTitle:nil
                                       otherButtonTitles:@"Camera",@"Photo Library", nil];
         [actionSheet setActionSheetStyle:UIActionSheetStyleBlackOpaque];
+        [actionSheet setTag:kImport];
         // the tab bar was interferring in the current view
         [actionSheet showInView:[[UIApplication sharedApplication] keyWindow]]; 
         [actionSheet release];
@@ -200,27 +203,51 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex;
 {
-    switch (buttonIndex) {
-        case 0:
-            // Camera Button
-            //NSLog(@"Button 0 pressed");
-            [self displayImagePickerWithSource:UIImagePickerControllerSourceTypeCamera];
+    switch (actionSheet.tag) {
+        case kImport:
+            switch (buttonIndex) {
+                case 0:
+                    // Camera Button
+                    [self displayImagePickerWithSource:UIImagePickerControllerSourceTypeCamera];
+                    break;
+                case 1:
+                    // Library Button
+                    [self displayImagePickerWithSource:UIImagePickerControllerSourceTypePhotoLibrary];
+                    break;
+                case 2:
+                    // Cancel Button
+                    break;
+                default:
+                    break;
+            }
             break;
-        case 1:
-            // Library Button
-            //NSLog(@"Button 1 pressed");
-            [self displayImagePickerWithSource:UIImagePickerControllerSourceTypePhotoLibrary];
-            break;
-        case 2:
-            // Cancel Button
-            //NSLog(@"Button 2 pressed");
-            break;
+        case kExport:
+            switch (buttonIndex) {
+                case 0: {
+                    EvernoteViewController *everNote = [self.storyboard instantiateViewControllerWithIdentifier:@"Evernote"];
+                    [everNote setModalPresentationStyle:UIModalPresentationFullScreen];
+                    [self presentViewController:everNote animated:YES completion:nil];
+                    }
+                    break;
+                case 1: {
+                    DropBoxViewController *dropBox = [self.storyboard instantiateViewControllerWithIdentifier:@"DropBox"];
+                    [dropBox setModalPresentationStyle:UIModalPresentationFullScreen];
+                    [self presentViewController:dropBox animated:YES completion:nil];
+                    }
+                    break;
+                case 2: {
+                    [self displayComposerSheet];
+                }
+                default:
+                    break;
+            }
         default:
             break;
     }
+    
 }
 
--(void) displayImagePickerWithSource:(UIImagePickerControllerSourceType)src;
+- (void)displayImagePickerWithSource:(UIImagePickerControllerSourceType)src;
 {
     if([UIImagePickerController isSourceTypeAvailable:src]) {
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
@@ -314,8 +341,23 @@
     }
 }
 
-// Displays an email composition interface inside the application. Populates all the Mail fields. 
--(IBAction)displayComposerSheet 
+- (IBAction)saveText:(id)sender
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:@"Save Text"
+                                  delegate:self
+                                  cancelButtonTitle:@"Cancel"
+                                  destructiveButtonTitle:nil
+                                  otherButtonTitles:@"Evernote", @"DropBox", @"Email", nil];
+    [actionSheet setActionSheetStyle:UIActionSheetStyleBlackOpaque];
+    [actionSheet setTag:kExport];
+    // the tab bar was interferring in the current view
+    [actionSheet showInView:[[UIApplication sharedApplication] keyWindow]];
+    [actionSheet release];
+}
+
+// Displays an email composition interface inside the application. Populates all the Mail fields.
+- (void)displayComposerSheet
 {
     if(![MFMailComposeViewController canSendMail]) {
         // can't send mail.
@@ -328,7 +370,9 @@
     }
     
 	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
-	picker.mailComposeDelegate = self;
+    [[picker navigationBar] setTintColor:[UIColor blackColor]];
+
+    [picker setMailComposeDelegate:self];
 	
 	[picker setSubject:@"iPhoneOCR Text"]; // use the product name?
 

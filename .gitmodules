@@ -1,0 +1,3 @@
+[submodule "evernote-sdk-ios"]
+	path = evernote-sdk-ios
+	url = https://github.com/evernote/evernote-sdk-ios.git

@@ -44,8 +44,8 @@ using namespace tesseract;
     IBOutlet UIBarButtonItem *cameraButton;
     IBOutlet UIBarButtonItem *actionButton;
 
-    IBOutlet ZoomableImage    *thumbImageView;
-    IBOutlet UILabel        *statusLabel;
+    IBOutlet ZoomableImage *thumbImageView;
+    IBOutlet UILabel *statusLabel;
     IBOutlet UITextView *outputView;
 }
 
@@ -57,14 +57,15 @@ using namespace tesseract;
 @property(nonatomic,retain)IBOutlet UILabel *statusLabel;
 
 - (NSString *)readAndProcessImage:(UIImage *)uiImage;
-- (void)threadedReadAndProcessImage:(UIImage *)uiImage;
--(void)updateTextDisplay;
-
 - (NSString *)applicationDocumentsDirectory;
-- (IBAction)selectImage: (id) sender;
--(void)displayImagePickerWithSource:(UIImagePickerControllerSourceType)src;
 
--(IBAction)displayComposerSheet;
+- (IBAction)selectImage:(id)sender;
+- (IBAction)saveText:(id)sender;
+
+- (void)displayImagePickerWithSource:(UIImagePickerControllerSourceType)src;
+- (void)threadedReadAndProcessImage:(UIImage *)uiImage;
+- (void)updateTextDisplay;
+- (void)displayComposerSheet;
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error;
 
 - (UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize;
